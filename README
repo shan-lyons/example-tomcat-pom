@@ -3,7 +3,11 @@ with Tomcat.  This requires Tomcat to be installed (see
 http://www.coreservlets.com/Apache-Tomcat-Tutorial/ for instructions).
 
 Check out the project locally, and run from the top level directory of
-the app (make sure it has pom.xml in it if you are not sure!):
+the app (make sure it has pom.xml in it if you are not sure!).
+If you want to navigate the source through Eclipse, run:
+mvn eclipse:eclipse
+
+Run:
 mvn package
 
 Change to the target folder and copy the .war file into the web application
