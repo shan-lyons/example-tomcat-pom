@@ -1,0 +1,17 @@
+This example illustrates how to set up an extremely simple webapp to run
+with Tomcat.  This requires Tomcat to be installed (see 
+http://www.coreservlets.com/Apache-Tomcat-Tutorial/ for instructions).
+
+Check out the project locally, and run from the top level directory of
+the app (make sure it has pom.xml in it if you are not sure!):
+mvn package
+
+Change to the target folder and copy the .war file into the web application
+directory of your Tomcat installation (C:Program Files/apache-tomcat/webapps/).
+
+Start Tomcat (C:Program Files/apache-tomcat/bin/startup.bat)
+
+The application will start. Navigate to the following URL to see a very
+basic servlet:
+http://localhost:8080/<insert name of your war file, without extension>/exampleServlet
+Ex: http://localhost:8080/example-tomcat-pom-1.0-SNAPSHOT/exampleServlet
